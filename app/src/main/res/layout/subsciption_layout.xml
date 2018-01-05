@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionbar_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_arrow"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/back_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_payment"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/black"
+            android:text="@string/subscription"
+            android:layout_toRightOf="@+id/back_arrow"/>
+
+        <RelativeLayout
+            android:background="@drawable/tab_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/back_arrow"
+            android:textColor="#25000000"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/actionbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/list_item">
+    </ListView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empltyView"
+        android:text="No Connected Stores"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
+

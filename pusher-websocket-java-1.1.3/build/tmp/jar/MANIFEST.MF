@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Created-By: Pusher
+Implementation-Vendor: Pusher
+Implementation-Title: Pusher Java Websocket API Example
+Implementation-Version: 1.1.3
+Package: com.pusher.client.example
+Main-Class: com.pusher.client.example.ExampleApp
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:text="CHATS"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/chatFrag"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/totalcount"
+        android:background="@mipmap/reddot"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:textSize="8dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/friends_name"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+</LinearLayout>

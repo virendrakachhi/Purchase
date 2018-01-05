@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friends_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/notification_bag" />
+
+    <TextView
+        android:id="@+id/friends_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/toggle_follow"
+        android:layout_toRightOf="@+id/friend_image"
+        android:hint="Shoes"
+        android:maxLength="35"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <!--<ToggleButton
+        android:id="@+id/toggle_follow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/follow_selecter"
+        android:checked="false"
+        android:src="@mipmap/ok"
+        android:minWidth="10dp"
+        android:minHeight="10dp"
+        android:textOff=""
+        android:textOn="" />-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/toggle_follow"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/follow_off"
+            android:src="@mipmap/plus"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/follow_on"
+            android:src="@mipmap/ok1"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

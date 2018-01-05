@@ -1,0 +1,329 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:visibility="gone"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionbar_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_arrow"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friend_name"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:hint="@string/nike_store"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/back_arrow"
+            />
+
+        <RelativeLayout
+            android:background="@drawable/tab_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/back_arrow"
+            android:textColor="#25000000"/>
+
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/chat_link"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/chat_link"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/chat_link_de"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:layout_margin="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/chatlink_deactive"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/actionbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/box1"
+                android:background="@drawable/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/nike_image"
+                    android:src="@drawable/heart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_below="@+id/nike_image"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:hint="@string/nike"
+                        android:layout_alignParentLeft="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_toLeftOf="@+id/toggle_followed"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/top_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ToggleButton
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ok"
+                        android:padding="10dp"
+                        android:id="@+id/toggle_followed"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_toLeftOf="@+id/follow1"
+                        android:background="@drawable/follow_selecter"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                    <TextView
+                        android:id="@+id/follow1"
+                        android:layout_alignParentRight="true"
+                        android:text="Follow"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/following"
+                        android:textSize="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:padding="7dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@+id/relative"
+                    android:hint="@string/user_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:background="@color/skyblue"
+                    android:id="@+id/relative4"
+                    android:padding="15dp"
+                    android:layout_below="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/products"
+                        android:textColor="@color/white"
+                        android:text="@string/products"
+                        android:layout_marginLeft="@dimen/top_margin"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!-- <ToggleButton
+                         android:id="@+id/toggle_product"
+                         android:layout_width="40dp"
+                         android:layout_height="20dp"
+                         android:layout_alignParentRight="true"
+                         android:layout_marginRight="10dp"
+                         android:background="@drawable/toggle_selector"
+                         android:checked="false"
+                         android:text=""
+                         android:textOff=""
+                         android:textOn="" />-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/off_togP"
+                            android:src="@mipmap/off_tog"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp" />
+                        <ImageView
+                            android:id="@+id/red_toggleP"
+                            android:src="@mipmap/red_toggle"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/relative2"
+                    android:padding="15dp"
+
+                    android:background="@color/news_background"
+                    android:layout_below="@+id/relative4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/news"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+
+                        android:text="@string/news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!--<ToggleButton
+                        android:id="@+id/toggle_news"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/off_togN"
+                            android:src="@mipmap/off_tog"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp" />
+                        <ImageView
+                            android:id="@+id/red_toggleN"
+                            android:src="@mipmap/red_toggle"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="2dp"
+                    android:background="@color/green"
+                    android:id="@+id/relative3"
+                    android:padding="15dp"
+                    android:layout_below="@+id/relative2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/top_margin"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:id="@+id/offers"
+                        android:text="@string/offers"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!--<ToggleButton
+                        android:id="@+id/toggle_offers"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />-->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/off_togO"
+                            android:src="@mipmap/off_tog"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp" />
+                        <ImageView
+                            android:id="@+id/red_toggleO"
+                            android:src="@mipmap/red_toggle"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/similar_text"
+                android:layout_below="@+id/box1"
+                android:layout_marginTop="@dimen/top_margin"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="@string/similar_stores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ListView
+                android:id="@+id/similar_store1"
+                android:layout_below="@+id/similar_text"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

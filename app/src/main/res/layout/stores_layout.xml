@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/search_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB">
+
+        <EditText
+            android:id="@+id/search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/search_view_back"
+            android:background="#EBEBEB"
+            android:cursorVisible="false"
+            android:hint="    Search for stores"
+            android:imeOptions="actionSearch"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/search_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:background="#EBEBEB"
+            android:padding="8dp"
+            android:src="@mipmap/back_arrow" />
+
+
+        <ImageView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="1dp"
+            android:background="#EBEBEB"
+            android:padding="8dp"
+            android:src="@mipmap/search" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_Relative">
+
+
+        <ListView
+            android:id="@+id/lst_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#FFFFFF">
+
+        </ListView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ListView
+        android:id="@+id/lst_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_Relative"
+        android:divider="#FFFFFF"
+        android:visibility="gone">
+
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/empltyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Stores to display"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

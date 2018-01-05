@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/myBag"
+            android:src="@drawable/hashmybag_big_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wait_text"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/myBag"
+
+            android:text="@string/please_wait"
+            android:textColor="@color/colorDefaultWhite"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/otp_edit1"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/enter_otp"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:textColor="@color/colorDefaultWhite"
+            android:layout_below="@id/wait_text"
+            android:textColorHint="#80ffffff"
+            android:textColorHighlight="@color/colorDarkPink"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:shadowColor="@color/colorBagRed"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="13dp"
+            android:id="@+id/proceedbutton"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/otp_edit1"
+            android:text="@string/proceed"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorDefaultWhite"
+            android:textAlignment="center"
+            android:background="@color/colorDarkPink"
+            />
+
+    </RelativeLayout>
+
+

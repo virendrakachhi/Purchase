@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/product"
+        android:background="@drawable/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+    <RelativeLayout
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/detail"
+            android:text="sczxczxczxc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/timining"
+            android:text="sczxczxczxc"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_below="@+id/detail"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wishlist_gray"
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_back"
+        android:layout_below="@+id/product"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/text123"
+            android:text="Pay $10 to book this item NIKE DMX 420 Series, UK Size 10, Pay Using"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/footer"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/text123"
+            android:textColor="#19669B"/>
+        <LinearLayout
+            android:layout_below="@+id/footer"
+            android:id="@+id/buttos"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buy_now"
+                android:text="Buy Now"
+                android:textColor="@color/white"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:background="@drawable/buy_btn"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="@drawable/cash_on_delivery_btn"
+                android:text="Cash on Delivery"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:textAllCaps="false"
+                android:id="@+id/cod_now"
+                android:paddingRight="20dp"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/buttos"
+            android:text="12:15 PM"
+            android:layout_margin="10dp"
+            android:id="@+id/buttos_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

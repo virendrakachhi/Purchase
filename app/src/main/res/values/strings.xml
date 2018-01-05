@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">HashMyBag</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="phone">Phone</string>
+    <string name="customername">Name</string>
+    <string name="proceed">PROCEED</string>
+    <string name="enter_otp">Enter the OTP</string>
+    <string name="please_wait">Please wait for the app to read OTP</string>
+    <string name="user_name">Name</string>
+    <string name="user_location">Kingdom of Saudi Arabia</string>
+    <string name="subscription">Subscriptions</string>
+    <string name="my_friends">My Friends</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="payments">Payments</string>
+    <string name="settings">Settings</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="name">Name</string>
+    <string name="add_funds">ADD FUNDS</string>
+    <string name="email">Email</string>
+    <string name="add">Address</string>
+    <string name="no.">Mobile No</string>
+    <string name="emailId">info@hashmybag.com</string>
+    <string name="logout">Log out</string>
+    <string name="action_settings">Settings</string>
+    <string name="following"> Following</string>
+    <string name="nike">Nike</string>
+    <string name="nike_store">Nike Store</string>
+    <string name="products">Products</string>
+    <string name="news">News</string>
+    <string name="offers">Offers</string>
+    <string name="user_address">Nike India Pvt. Ltd. Ground and Frist Floor, Olympia Building, No 66/1, Bagmane Tech Park, CV Raman Nagar Banglore 560093, India</string>
+    <string name="similar_stores">Similar Stores</string>
+    <string name="gallery">Gellary</string>
+    <string name="camera">Camera</string>
+    <string name="attechment">Attechment</string>
+    <string name="follow">Follow</string><string name="nearby">Nearby</string><string name="item_detail">60% Discount <b>on Nike Shopes</b></string>
+    <string name="item_date">ADDED DATE</string><string name="item_remove">REMOVE</string><string name="item_detail1">This season we have a gift for everyone.</string><string name="whislist">Wishlist</string><string name="profile">Profile</string>
+
+   <!-- for debug-->
+
+<!--
+    <string name="google_map_key"> AIzaSyCm_Jr_4DNk0Jp4kqC-YC2W3_pKvexb2KU</string>
+-->
+
+
+<!--for release-->
+    <string name="google_map_key">AIzaSyBhGk0fJhxo_aZouygrjFfxEXzpAdTR07g</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="customnotificationtitle">Hash MyBag</string>
+    <string name="customnotificationtext">Hashmybag is an app uniquely designed to bring</string>
+    <string name="customnotificationticker">Hash MyBag</string>
+    <string name="lbltitle">ascxc</string>
+    <string name="lbltext">scxzc</string>
+    <string name="share">Invite Friend</string>
+
+    // gcm  687749829837
+    <string name="gcm_defaultSenderId">430466876478</string>
+    <string name="filter_title_viewgizmos">Deeplinking</string>
+
+
+</resources>

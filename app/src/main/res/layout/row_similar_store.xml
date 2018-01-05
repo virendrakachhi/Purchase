@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@mipmap/notification_bag"
+        android:id="@+id/store_pic"
+        android:layout_marginLeft="@dimen/top_margin"
+        android:layout_width="@dimen/image_size"
+         android:layout_centerVertical="true"
+        android:layout_height="@dimen/image_size" />
+    <TextView
+        android:id="@+id/store_name"
+        android:text="store_name"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/store_pic"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="store_name"
+        android:layout_below="@+id/store_name"
+        android:id="@+id/store_address"
+        android:layout_toRightOf="@+id/user_location_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/user_location_black"
+        android:layout_toRightOf="@+id/store_pic"
+        android:layout_below="@+id/store_name"
+        android:src="@mipmap/user_location_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

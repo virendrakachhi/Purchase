@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/back"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionbar_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_arrow"
+            android:padding="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/back_arrow"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/store_image"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/back_arrow"
+            android:layout_marginLeft="0dp"
+            android:src="@mipmap/notification_bag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/store_name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="@string/nike"
+            android:layout_toRightOf="@+id/store_image"
+            />
+
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/share_button"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:padding="15dp"
+            android:src="@drawable/share"/>
+        <RelativeLayout
+            android:background="@drawable/tab_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/back_arrow"
+            android:textColor="#25000000"/>
+
+
+
+    </RelativeLayout>
+    <ListView
+        android:layout_below="@+id/actionbar_layout"
+        android:id="@+id/stream_chat_list"
+        android:padding="10dp"
+        android:divider="#FFFFFF"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/attchment_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/action_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/camera"
+            />
+        <ImageView
+            android:id="@+id/action_gallery"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gallery"
+            />
+
+    </LinearLayout>
+
+
+    <!-- <RelativeLayout
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/btn_back"
+         android:layout_above="@+id/bottom_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+         <TextView
+             android:padding="20dp"
+             android:id="@+id/text"
+             android:text="Pay $10 to book this item NIKE DMX 420 Series, UK Size 10, Pay Using"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <RelativeLayout
+             android:background="@android:color/black"
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:id="@+id/footer"
+             android:layout_marginBottom="20dp"
+             android:layout_below="@+id/text"
+             android:textColor="#19669B"/>
+         <LinearLayout
+             android:layout_below="@+id/footer"
+             android:id="@+id/buttos"
+             android:layout_centerHorizontal="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             <Button
+                 android:text="Buy Now"
+                 android:textColor="@color/white"
+                 android:paddingLeft="45dp"
+                 android:paddingRight="45dp"
+                 android:textSize="12dp"
+                 android:textAllCaps="false"
+                 android:background="@drawable/buy_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:layout_height="wrap_content" />
+             <Button
+                 android:background="@drawable/cash_on_delivery_btn"
+                 android:text="Cash on Delivery"
+                 android:textColor="@color/white"
+                 android:paddingLeft="20dp"
+                 android:textAllCaps="false"
+
+                 android:paddingRight="20dp"
+                 android:textSize="12dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+         </LinearLayout>
+         <TextView
+             android:layout_below="@+id/buttos"
+             android:text="12:15 PM"
+             android:layout_margin="10dp"
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+     </RelativeLayout>
+
+ -->
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edittext_send"
+            android:hint="Reply"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/send_button"
+            android:src="@mipmap/send"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

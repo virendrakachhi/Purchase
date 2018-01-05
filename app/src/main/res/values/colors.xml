@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPink">#f67c77</color>
+    <color name="colorBlue">#2eb0eb</color>
+    <color name="colorDarkPink">#ff4d4d</color>
+    <color name="colorGreen">#4bcf77</color>
+    <color name="colorBagRed">#dc1a28</color>
+    <color name="colorDefaultWhite">#ebebeb</color>
+    <color name="colorYellowish">#ffab00</color>
+    <color name="black">#1B1E19</color>
+    <color name="following">#545454</color>
+    <color name="skyblue">#2EB0EB</color>
+    <color name="green">#4BCF77</color>
+    <color name="white">#FFFFFF</color>
+    <color name="news_background">#F67C77</color>
+    <color name="transparent">#00000000</color>
+    <color name="selectedColor">#F67C77</color>
+    <color name="gray">#D3D3D3</color>
+</resources>

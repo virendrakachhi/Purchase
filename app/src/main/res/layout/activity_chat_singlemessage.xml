@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rightMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/transparent"
+        >
+
+        <LinearLayout
+            android:id="@+id/rightM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_background_right"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Right Message here"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/imageViewRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewR1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/notification_bag" />
+
+                <ProgressBar
+                    android:id="@+id/processing_box_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#F00"
+                    android:indeterminateTintMode="src_in" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timeMR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userMessagerR"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="12:45 pm"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rightnode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/rightM"
+            android:src="@mipmap/right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/leftMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rightMC"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/leftM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/leftnode"
+            android:background="@drawable/chat_backgroung_left"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/textL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Right Message here"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:id="@+id/imageViewLC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewL1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/notification_bag" />
+
+                <ProgressBar
+                    android:id="@+id/processing_box_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#F00"
+                    android:indeterminateTintMode="src_in" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/timeML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userMessagerR"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="12:45 pm"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/leftnode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/stream_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftMC"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Title here"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@mipmap/notification_bag" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Description here"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="if link then link here"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="25dp"
+            android:text="Date like 2.03 PM"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/desc"
+            android:padding="10dp"
+            android:src="@drawable/wishlist_gray" />
+
+        <LinearLayout
+            android:id="@+id/payment_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/desc"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/payment_option_cod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/cash_on_delivery_btn"
+                android:padding="5dp"
+                android:text="Cash On Delivery"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/payment_option_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buy_btn"
+                android:padding="5dp"
+                android:text="Buy Now"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/payment_option_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cash_on_delivery_btn"
+                android:padding="5dp"
+                android:text="Wallet"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

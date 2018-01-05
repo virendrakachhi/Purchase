@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionbar_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_arrow"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/header_payment"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@android:color/black"
+            android:text="@string/my_wallet"
+            android:layout_toRightOf="@+id/back_arrow"/>
+
+        <RelativeLayout
+            android:background="@drawable/tab_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/back_arrow"
+            android:textColor="#25000000"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/below_hader"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myBag"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/paytm_tag"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_blance"
+            android:textSize="17dp"
+            android:text="@string/current_balance"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/myBag"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/money"
+            android:text="$1500"
+            android:textStyle="bold"
+            android:textColor="@color/colorGreen"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/current_blance"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"/>
+        <RelativeLayout
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/footer1"
+            android:layout_below="@+id/money"
+            android:textColor="#D3D3D3"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/funds"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:text="@string/add_funds"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/footer1"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

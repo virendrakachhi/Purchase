@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/background"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionbar_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_arrow"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/back_arrow"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friend_image"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_arrow"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/notification_bag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friend_name"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="@string/nike"
+            android:layout_toRightOf="@+id/friend_image"
+            />
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/last_seen_friend"
+            android:textSize="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/friend_image"
+            android:layout_below="@+id/friend_name"
+            android:textColor="@android:color/black"
+            android:text="Yesterday"
+            />-->
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/share_button"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:padding="15dp"
+            android:src="@mipmap/attechment"/>
+
+    </RelativeLayout>
+
+
+
+  <!--  <ListView
+        android:layout_below="@+id/actionbar_layout"
+        android:id="@+id/chat_list"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>-->
+    <LinearLayout
+        android:id="@+id/attchment_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/action_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/camera"
+            />
+        <ImageView
+            android:id="@+id/action_gallery"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gallery"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edittext_send"
+            android:hint="Reply"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/send_button"
+            android:src="@mipmap/send"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

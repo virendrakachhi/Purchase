@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/item1"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/heart"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+        <TextView
+            android:id="@+id/item_detail"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/item_image"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="10dp"
+            android:id="@+id/footer1"
+            android:layout_below="@+id/item_detail"
+            android:textColor="#D3D3D3"/>
+        <TextView
+            android:id="@+id/item_date"
+            android:text="@string/item_date"
+            android:layout_marginLeft="17dp"
+            android:layout_below="@+id/footer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/date1"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="17dp"
+            android:text="Today"
+            android:layout_below="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/item_remove"
+            android:background="@drawable/btn_back"
+            android:layout_below="@+id/footer1"
+            android:layout_alignParentRight="true"
+            android:text="@string/item_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rrrr"
+        android:background="@color/transparent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/rrman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_background_right"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/textR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Hellobbbbbbbbbbbbbbbbbb"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <RelativeLayout
+                android:id="@+id/imageViewRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageViewR1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/notification_bag" />
+                <ProgressBar
+                    android:id="@+id/processing_box_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#F00"
+                    android:indeterminateTintMode="src_in" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/timeMR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userMessagerR"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="12:45 pm"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/rightnode"
+            android:layout_toRightOf="@+id/rrman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_below="@+id/rrrr"
+        android:id="@+id/llll"
+        android:background="@color/transparent"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llman"
+            android:layout_toRightOf="@+id/leftnode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_backgroung_left"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/textL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Hellobbbbbbbbbbbbbbbbbb"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <RelativeLayout
+                android:id="@+id/imageViewLC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageViewL1"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/notification_bag" />
+                <ProgressBar
+                    android:id="@+id/processing_box_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#F00"
+                    android:indeterminateTintMode="src_in" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/timeML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userMessagerR"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="12:45 pm"
+                android:textColor="@color/black"
+                android:textSize="8dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/leftnode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/llll"
+        android:id="@+id/stream_info"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:text="sczxczxczxc"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title"
+            android:src="@drawable/wishlist_gray"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            />
+        <TextView
+            android:id="@+id/desc"
+            android:text="sczxczxczxc"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/link"
+            android:text="sczxczxczxc"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/date"
+            android:text="sczxczxczxc"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/favourite"
+            android:padding="10dp"
+            android:layout_below="@+id/desc"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/wishlist_gray"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:id="@+id/payment_option"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/desc"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/payment_option_cod"
+                android:text="Cash On Delivery"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/cash_on_delivery_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/payment_option_card"
+                android:text="Buy Now"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buy_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="Wallet"
+                android:padding="5dp"
+                android:background="@drawable/cash_on_delivery_btn"
+                android:textColor="@color/white"
+                android:id="@+id/payment_option_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
